@@ -1,6 +1,6 @@
 # ci
 
-Projeto Docker SQL Server
+Projeto Docker SQL Server (v. 1.0.0)
 
 O projeto visa criar e disponibilizar uma base de testes do SQL Server via Docker.
 
