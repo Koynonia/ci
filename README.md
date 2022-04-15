@@ -4,6 +4,7 @@ Projeto Docker SQL Server
 
 O projeto visa criar e disponibilizar uma base de testes do SQL Server via Docker.
 
+Este projeto está utilizando como ferramenta de fluxo de trabalho o Git Flow.
 # Módulos
 
 |Indíce|Módulo|Descrição|
