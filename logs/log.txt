@@ -1,25 +1,20 @@
-22-04-09-11:37:07 script sh - Compose Services UP
-22-04-09-11:37:08 script sh - Status current: "starting"
-22-04-09-11:37:10 script sh - Status current: "starting"
-22-04-09-11:37:12 script sh - Status current: "starting"
-22-04-09-11:37:14 script sh - Status current: "starting"
-22-04-09-11:37:16 script sh - Status current: "starting"
-22-04-09-11:37:18 script sh - Status current: "starting"
-22-04-09-11:37:20 script sh - Status current: "starting"
-22-04-09-11:37:22 script sh - Status current: "starting"
-22-04-09-11:37:25 script sh - Status current: "starting"
-22-04-09-11:37:27 script sh - Status current: "starting"
-22-04-09-11:37:29 script sh - Status current: "starting"
-22-04-09-11:37:31 script sh - Status current: "starting"
-22-04-09-11:37:33 script sh - Status current: "starting"
-22-04-09-11:37:35 script sh - Status current: "starting"
-22-04-09-11:37:37 script sh - Ready status: "healthy"
-22-04-09-11:37:37 script sh - CREATE DATABASE test_db
-22-04-09-11:37:38 script sh - executeCommandSqlServer...
-22-04-09-11:37:39 script sh - USE test_db;CREATE LOGIN application_user WITH PASSWORD='Pass_word_123',DEFAULT_DATABASE=test_db;CREATE USER application_user FOR LOGIN application_user;EXEC sp_addrolemember N'db_datareader',N'application_user';EXEC sp_addrolemember N'db_datawriter',N'application_user'
-22-04-09-11:37:40 script sh - executeCommandSqlServer...
-22-04-09-11:37:40 script sh - sqlcmd -S localhost -U sa -P Admin@123 -d test_db -i './scripts/teste.sql'
-22-04-09-11:37:41 script sh - executed executeCommandScriptInlineSqlServer...
-22-04-09-11:37:41 script sh - executed executeScriptsInitialData...
-22-04-09-11:37:41 script sh - Initial database executed !
-22-04-09-11:40:26 script sh - Compose Services DOWN
+22-04-14-22:27:46 script sh - Compose Services UP
+22-04-14-22:27:48 script sh - Status current: "starting"
+22-04-14-22:27:51 script sh - Status current: "starting"
+22-04-14-22:27:54 script sh - Status current: "starting"
+22-04-14-22:27:58 script sh - Status current: "starting"
+22-04-14-22:28:01 script sh - Status current: "starting"
+22-04-14-22:28:05 script sh - Status current: "starting"
+22-04-14-22:28:08 script sh - Status current: "starting"
+22-04-14-22:28:12 script sh - Status current: "starting"
+22-04-14-22:28:15 script sh - Status current: "starting"
+22-04-14-22:28:18 script sh - Ready status: "healthy"
+22-04-14-22:28:18 script sh - CREATE DATABASE test_db
+22-04-14-22:28:21 script sh - executeCommandSqlServer...
+22-04-14-22:28:22 script sh - USE test_db;CREATE LOGIN application_user WITH PASSWORD='Pass_word_123',DEFAULT_DATABASE=test_db;CREATE USER application_user FOR LOGIN application_user;EXEC sp_addrolemember N'db_datareader',N'application_user';EXEC sp_addrolemember N'db_datawriter',N'application_user'
+22-04-14-22:28:23 script sh - executeCommandSqlServer...
+22-04-14-22:28:23 script sh - sqlcmd -S localhost -U sa -P Admin@123 -d test_db -i './scripts/teste.sql'
+22-04-14-22:28:25 script sh - executed executeCommandScriptInlineSqlServer...
+22-04-14-22:28:25 script sh - executed executeScriptsInitialData...
+22-04-14-22:28:25 script sh - Initial database executed !
+22-04-14-22:31:09 script sh - Compose Services DOWN
