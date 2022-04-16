@@ -8,9 +8,9 @@ services:
     environment:
         - SA_PASSWORD=${SA_PASSWORD}
         - ACCEPT_EULA=Y        
-    volumes:
-      - ./scripts:/ci/scripts
-      - ./logs:/ci/logs
+    # volumes:
+    #   - ./scripts:/ci/scripts
+    #   - ./logs:/ci/logs
     healthcheck:
       test: ["CMD", "${SQL_CMD}", "-U", "sa", "-P", "${SA_PASSWORD}", "-Q", "select 1"] 
       timeout: 1s
