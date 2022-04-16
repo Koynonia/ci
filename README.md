@@ -1,9 +1,11 @@
 # Projeto Docker SQL Server (v. 1.0.0)
-Este projeto tem como base o post ["Dicas — Docker: SQL Server base de dados para validação de testes"](https://medium.com/@leandrobianch/dicas-docker-imagem-sqlserver-com-cria%C3%A7%C3%A3o-de-banco-de-dados-cria%C3%A7%C3%A3o-de-usu%C3%A1rio-e-carga-inicial-87609d4ecc0) de autoria de Leandro Bianch no Medium.
+Este projeto tem como base o post ["Dicas - Docker: SQL Server base de dados para validação de testes"](https://medium.com/@leandrobianch/dicas-docker-imagem-sqlserver-com-cria%C3%A7%C3%A3o-de-banco-de-dados-cria%C3%A7%C3%A3o-de-usu%C3%A1rio-e-carga-inicial-87609d4ecc0) de autoria de Leandro Bianch no Medium.
 
 O projeto visa criar e disponibilizar uma base de testes do SQL Server via Docker, e está utilizando como ferramenta de fluxo de trabalho o Git Flow.
 
 Este cenário pode ser contemplado quando há ausência de um micro [ORM ](https://www.devmedia.com.br/orm-object-relational-mapper/19056) [(Dapper)](https://dapper-tutorial.net/dapper) ou macro ORM ([EF](https://docs.microsoft.com/pt-br/ef/) [NHiberante](https://nhibernate.info/)) quando não consegue aplicar a técnica de [migração)](https://docs.microsoft.com/pt-br/ef/core/managing-schemas/migrations/?tabs=dotnet-core-cli) ou a base de dados é mantida por um time de DBA por exemplo.
+## Ferramenta obrigatória Docker
+Requer a instalação do Docker engine da ultima versão do sistema operacional.
 
 ## O cenário
 Disponibilizar um ambiente sqlserver para o time de testes e desenvolvimento para validação:
@@ -46,7 +48,7 @@ Diretório que contém os logs gerados na execução dos scripts e interação c
 
 Estes diretório e logs são criados dinamicamente ao executar o script *execute-test.sh*
 ___
-## Executando o ambiente
+## Como executar
 Acesse o diretório ci e digite no terminal (Bash):
 
 ```sh
