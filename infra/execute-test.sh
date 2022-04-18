@@ -30,14 +30,23 @@ waitingSqlReady() {
         
             exit 1
         fi;
+
+        if [ $CONTAINER_STATUS == "\"unhealthy\"" ]; then
+
+            log "Container crashed - status: $CONTAINER_STATUS"
+
+            errorContainer
+
+            exit 1
+        fi;
     done
 }
 
 startContainer () {
-  
-   docker-compose -f ./scripts/docker-compose-sql-server-qa.yaml up -d 
-   
-   log "Compose Services UP"
+
+    docker-compose -f ./scripts/docker-compose-sql-server-qa.yaml up -d 
+
+    log "Compose Services UP"
 }
 
 executeInitialSql () {
@@ -60,6 +69,12 @@ stopContainer () {
     log "Compose Services DOWN"
 }
 
+errorContainer () {
+    
+    docker-compose -f ./scripts/docker-compose-sql-server-qa.yaml down
+    
+    log "Compose Services DOWN"
+}
 
 inicializeLog() {
     
